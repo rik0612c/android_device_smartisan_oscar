@@ -25,8 +25,8 @@
 
     <!-- Names of the key handler classes -->
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
-        <item>org.mokee.mkparts.gestures.KeyHandler</item>
-        <item>org.mokee.settings.device.KeyHandler</item>
+        <item>org.lineageos.lineageparts.gestures.KeyHandler</item>
+        <item>org.lineageos.settings.device.KeyHandler</item>
     </string-array>
 
     <!-- Hardware keys present on the device, stored as a bit field.

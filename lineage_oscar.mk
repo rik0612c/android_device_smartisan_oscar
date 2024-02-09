@@ -23,24 +23,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 $(call inherit-product, device/smartisan/oscar/device.mk)
 
 # Inherit some common MoKee stuff.
-$(call inherit-product, vendor/mokee/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mk.maintainer=XiNGRZ
-
-PRODUCT_NAME := mokee_oscar
+PRODUCT_NAME := lineage_oscar
 PRODUCT_BRAND := SMARTISAN
 PRODUCT_DEVICE := oscar
 PRODUCT_MANUFACTURER := smartisan
 PRODUCT_MODEL := OC105
 
 PRODUCT_GMS_CLIENTID_BASE := android-smartisan
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="oscar" \
-    PRIVATE_BUILD_DESC="oscar-user 7.1.2 N2G47H 1 dev-keys"
-
-BUILD_FINGERPRINT := Android/oscar/oscar:7.1.2/N2G47H/1561092285:user/dev-keys
 
 # Sign bootable images
 PRODUCT_SUPPORTS_VERITY := true

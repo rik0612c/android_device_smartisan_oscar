@@ -30,7 +30,7 @@ DEVICE_PATH := device/smartisan/oscar
 BUILD_BROKEN_DUP_RULES := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := mokee_oscar_defconfig
+TARGET_KERNEL_CONFIG := lineageos_oscar_defconfig
 
 # HAX: SELinux Permissive - Remove ASAP
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
@@ -52,7 +52,7 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2019-4-10
+VENDOR_SECURITY_PATCH := 2019-04-10
 
 # inherit from the proprietary version
 -include vendor/smartisan/oscar/BoardConfigVendor.mk
